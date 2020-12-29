@@ -4,3 +4,176 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'BwModelica', sans-serif;
+}
+
+  /* Fonts definition */
+  @font-face{
+    font-family: "BwModelica";
+    src: url('./fonts/bw/BwModelicaCyrillicDEMO-Regular.ttf');
+  }
+
+  
+/* NAVIGATION BAR STYLES */
+.navbar-light .navbar-nav .nav-link {
+    color: #7429B8;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: 'Poppins';
+}
+
+/* Styles for relative layout */
+.rel{
+    position: relative;
+}
+
+/* First Section Styles*/
+.first-bg{
+    background-color:  #F4F2FF;
+    height: 612px;
+    margin-top: -300px;
+}
+.image-style{
+    position: relative;
+    margin-top: 50px;
+}
+.learn-div{
+    position: absolute;
+    bottom: 0;
+    background: #7429B8;
+    padding: 40px 50px;
+}
+.learn-text{
+    color: #F4F2FF;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.signal-div{
+    position: absolute;
+    bottom: 170px;
+    left: 260px;
+    background: rgba(255, 255, 255, 0.89);
+    padding: 30px 25px;
+}
+/* End of first section */
+
+/* Features styles */
+.feature{
+    margin-top: -250px;
+    margin-bottom: 70px;
+    padding: 40px 150px 80px 150px;
+    background: #FFFFFF;    
+    box-shadow: 0px 10px 60px 5px rgba(0, 0, 0, 0.03);
+}
+.feature-title{
+    font-weight: bold;
+    color: #000000;
+    line-height: 29px;
+    /* font-size: 24px; */
+}
+
+
+/* Invest section styles */
+.invest-section{
+    background: #F4F5F7;
+    padding: 100px 20px 150px 20px;
+}
+.btn-invest{
+    background: #7429B8;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 0px;
+}
+.btn-invest:hover{
+    color: #fff;
+}
+
+.btn:focus, .btn:active{
+    outline: none !important;
+    box-shadow: none;
+  }
+
+.invest-image{
+    position: absolute;
+    left: -20px;
+    bottom: -210px;
+}
+.invest-title{
+    font-weight: 600;
+    line-height: 40px;
+}
+.invest-desc{
+    font-weight: 400;
+    line-height: 28px;
+}
+.purple_rect{
+    position: absolute;
+    bottom: -30px;
+    left: 265px;
+}
+.yellow_rect{
+    position: absolute;
+    top: -15px;
+    left: 75px;
+}
+
+/* Another section styles */
+.another-section{
+    padding: 100px 50px;
+}
+.card-title{
+    font-weight: bold;
+    line-height: 29px;
+}
+.card-text{
+    font-size: 14px;
+    line-height: 25px;
+}
+.card-img-top{
+    border-radius: 0px;
+}
+.card-body{
+    height: 360px;
+    padding: 50px 20px;
+    margin-top: -1px;
+}
+.card-text{
+    margin-top: 20px;
+}
+
+
+/* video section */
+.media-container{
+    position: relative;
+    margin-top: -10px;
+}
+.media-img{
+    max-width: 100%;
+    height: 518px;
+}
+.media-space{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    
+}
+.video-column{
+    background: #000000;
+    padding: 100px 100px;
+}
+
+.row_def{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ .column_def{
+    margin-left: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    position: relative
+ }
