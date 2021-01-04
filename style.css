@@ -23,6 +23,7 @@ body{
     letter-spacing: 0.1em;
     font-family: 'Poppins';
     padding-bottom: 0px;
+    font-size: 14px;
 }
 .navbar-light .navbar-nav .nav-link{
     transition: all 0.5s;
@@ -33,6 +34,10 @@ body{
 .nav-border{
     border-bottom: 3px solid #FCB932;
 }
+.navbar-light .navbar-nav .nav-link.started{
+    border: 1px solid #8949C3;
+    padding: 8px;
+  }
 
 
 
@@ -288,3 +293,120 @@ body{
     background:  rgba(244, 242, 255, 0.24);
     padding: 100px 20px 150px 20px;
  }
+ .about-feature{
+     padding: 100px 20px;
+     background: #F6F5FC;
+ }
+ .feature-desc{
+     /* font-weight: 600; */
+     color: #191C3C;
+     line-height: 25px
+ }
+
+ /* ----- FAQ STYLES ------- */
+ .faq-head{
+    background: linear-gradient(180deg, #731FB1 0.27%, #A44BDE 35.51%, #9A47DB 68.6%, #9E49DF 100%);
+    padding: 80px 20px;
+ }
+ .faq{
+     padding-top: 70px;
+     padding-bottom: 70px;
+ }
+ .faq-title{
+    color: #160059;
+    font-weight: 700;
+ }
+ .faq-question{
+     font-weight: 700;
+     line-height: 30px;
+ }
+ .faq-answer{
+    color: #000000;
+ }
+ .faq-circle{
+     position: absolute;
+     bottom: -40px;
+     right: 20px;
+ }
+ .faq-zig{
+    position: absolute;
+    top: -60px;
+    right: -115px;
+ }
+ .faq-zig2{
+    position: absolute;
+    top: -100px;
+    left: -70px; 
+ }
+
+ /* ---- CONTACT STYLES ------------------------------ */
+ .contact-form{
+    background: #F6F5FC;
+    padding-top: 80px;
+    padding-bottom: 80px;
+ }
+ .contact-circle{
+     position: absolute;
+     top: 250px;
+     right: 20px;
+ }
+ .contact-head{
+     font-weight: bold;
+ }
+ .contact-address{
+     font-size: 14px;
+     line-height: 20px;
+ }
+ .btn-send{
+    background: #3E2093;
+    border: 0.2px solid #3E50F7;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 50px;
+ }
+ .btn-send:hover{
+    color: #fff;
+}
+.input-style{
+    padding: 25px 20px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+.input-style:focus {
+    border: none;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    outline: 0 none;
+  }
+
+.input-style::placeholder {
+   color: rgba(179, 117, 255, 0.5);
+}
+
+#textarea::placeholder{
+    color: rgba(179, 117, 255, 0.5); 
+}
+
+#textarea{
+    padding: 20px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    resize: none;
+    border: none;
+    border-radius: 5px;
+}
+#textarea:focus{
+    outline: 0 none transparent;
+    -moz-appearance:none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    outline: 0 none;
+}
