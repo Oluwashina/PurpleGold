@@ -338,6 +338,16 @@ body{
      color: #191C3C;
      line-height: 25px
  }
+ .about-circle{
+     position: absolute;
+     top: -70px;
+     right: 70px;
+ }
+ .core-circle{
+     position: absolute;
+    bottom: -20px;
+    right: 20px;
+ }
 
  /* ----- FAQ STYLES ------- */
  .faq-head{
