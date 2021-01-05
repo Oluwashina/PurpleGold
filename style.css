@@ -6,6 +6,7 @@
 
 body{
     font-family: 'BwModelica', sans-serif;
+    scroll-behavior: smooth;
 }
 
   /* Fonts definition */
@@ -73,6 +74,36 @@ body{
 .rel{
     position: relative;
 }
+
+/* back to top button styles */
+.to-top-container #toTop {
+    border-radius: 6px 6px 0 0;
+  }
+  .to-top-right #toTop {
+    right: 30px;
+  }
+  #toTop {
+    background-color: #333;
+    border-radius: 4px 4px 0 0;
+    bottom: 0;
+    display: none;
+    height: 35px;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    opacity: .9;
+    z-index: 100000;
+    transition: all .2s ease-in-out 0s;
+    animation: fadeIn 0.3s;
+    line-height: 1;
+  }
+  
+  #toTop:hover{
+    background-color: #7429B8;;
+  }
+  
 
 /* First Section Styles*/
 .first-bg{
@@ -181,6 +212,10 @@ body{
 .another-section{
     padding: 100px 50px;
 }
+.card{
+    border: none;
+    border-radius: 0px;
+}
 .card-title{
     font-weight: bold;
     line-height: 29px;
@@ -199,6 +234,16 @@ body{
 }
 .card-text{
     margin-top: 20px;
+}
+.box{
+    transition: all 0.3s ease;
+}
+.box:hover {
+    -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
 }
 
 
@@ -237,7 +282,6 @@ body{
 
  /* Testimonials section */
  .testimonials{
-    height: 300px; 
     background: #EAF0FF;
      margin-top: 50px;
      padding: 40px 40px;
@@ -245,7 +289,8 @@ body{
  .testimonials-head{
     color: #4A2FBA;
     line-height: 58px;
-    font-weight: bold;
+    font-weight: 700;
+    margin-left: 150px;
  }
 
  /* contact section */
@@ -319,6 +364,8 @@ body{
  .about-details{
     background:  rgba(244, 242, 255, 0.24);
     padding: 100px 20px 100px 20px;
+    background-image: url("images/about-bg.png");
+    background-repeat: no-repeat;
  }
  .about-vision{
      padding: 80px 20px;
@@ -399,7 +446,7 @@ body{
  .contact-circle{
      position: absolute;
      top: 250px;
-     right: 20px;
+     right: 30px;
  }
  .contact-head{
      font-weight: bold;
