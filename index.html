@@ -8,6 +8,7 @@
       <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -268,12 +269,17 @@
                 <div class="video-column">
 
                     <div style="display: flex;">
-                        <div>
-                            <img src="images/play.png" class="img-fluid" style="cursor: pointer;">
+                        <div class="ripple">
+                            <a href="#headerPopup" id="popupVideo" target="_blank"><img src="images/play.png" class="img-fluid" style="cursor: pointer;"></a>
                         </div>
                         <div>
                             <p class="text-white ml-3" style="font-weight: 600; font-size: 20px;">Watch our video</p>
                         </div> 
+                    </div>
+
+                    <!-- video embed display -->
+                    <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f-ds_qwopxU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div>
@@ -296,7 +302,7 @@
                 <!-- first column -->
                 <div class="col-lg-4">
 
-                    <div style="padding: 30px 20px 30px 60px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-body.png'); background-repeat: no-repeat;">
+                    <div class="test-body" style="padding: 30px 20px 30px 60px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-body.png'); background-repeat: no-repeat;">
                         <div>
                             <img src="images/testifier1.png" class="img-fluid">
                         </div>
@@ -310,7 +316,7 @@
                     </div>
 
                     <!-- second layout -->
-                    <div class="mt-4" style="padding: 30px 20px 30px 60px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-white.png'); background-repeat: no-repeat;">
+                    <div class="mt-4 test-body" style="padding: 30px 20px 30px 60px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-white.png'); background-repeat: no-repeat;">
                         <div>
                             <img src="images/testifier2.png" class="img-fluid">
                         </div>
@@ -327,7 +333,7 @@
 
                 <!-- second column -->
                 <div class="col-lg-4">
-                    <div class="" style="padding: 30px 40px 30px 30px; border-radius: 0px 40px 40px 40px; background: #fff">
+                    <div class="test-body" style="padding: 30px 40px 30px 30px; border-radius: 0px 40px 40px 40px; background: #fff">
                         <div>
                             <img src="images/testifier3.png" class="img-fluid">
                         </div>
@@ -341,7 +347,7 @@
                     </div>
 
                     <!-- second layout -->
-                    <div class="mt-5" style="padding: 30px 40px 30px 30px; box-shadow: 0px 4px 20px 8px rgba(103, 103, 103, 0.03);
+                    <div class="mt-5 test-body" style="padding: 30px 40px 30px 30px; box-shadow: 0px 4px 20px 8px rgba(103, 103, 103, 0.03);
                     border-radius: 30px; background: #fff;">
                         <div style="border-radius: 50%; background: #EAF0FF; width: 40px; height: 40px;">
                             
@@ -360,7 +366,7 @@
                 <!-- third column -->
                 <div class="col-lg-4">
                     <!-- first part -->
-                    <div class="mt-4" style="padding: 30px 50px 30px 30px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-white2.png'); background-repeat: no-repeat;">
+                    <div class="mt-4 test-body" style="padding: 30px 50px 30px 30px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-white2.png'); background-repeat: no-repeat;">
                         <div style="border-radius: 50%; background: #EAF0FF; width: 40px; height: 40px;">
                             
                         </div>
@@ -373,7 +379,7 @@
                         </div>
                     </div>
                     <!-- second part -->
-                    <div class="mt-5" style="padding: 30px 50px 30px 50px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-yellow.png'); background-repeat: no-repeat;">
+                    <div class="mt-5 test-body" style="padding: 30px 50px 30px 50px; border-radius: 0px 40px 40px 40px; background-image: url('images/testimony-yellow.png'); background-repeat: no-repeat;">
                         <div style="border-radius: 50%; background: #EAF0FF; width: 40px; height: 40px;">
                             
                         </div>
@@ -473,7 +479,7 @@
 
     <!-- back to top button styles -->
     <div class="to-top-container to-top-right">
-        <span class="mdi mdi-chevron-up" id="toTop" style="font-size: 26px; color: #fff; cursor: pointer;"></span>
+        <span class="mdi mdi-arrow-up" id="toTop" style="font-size: 20px; color: #fff; cursor: pointer;"></span>
     </div>
 
 
@@ -489,13 +495,20 @@
    
 <script src="dist/jquery.min.js"></script>
 <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script> 
- <!-- back-to-top script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
  <script>
+     $(document).ready(function(){
+        $('#popupVideo').magnificPopup({
+            type:'inline',
+            midClick: true
+        });
+     })
+
+    //  <!-- back-to-top script -->
     const backToTop = document.querySelector('#toTop');
     window.addEventListener('scroll',function(){
         if(window.pageYOffset > 500){
             backToTop.style.display = "flex";
-            // backToTop.style.border = "1px solid black";
         }else{
             backToTop.style.display = "none";
         }
@@ -503,6 +516,8 @@
     backToTop.addEventListener('click',function(){
         window.scrollTo(0,0);
     })
+
+    
 
 </script>
 </body>
