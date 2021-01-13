@@ -469,9 +469,28 @@ body {
   padding: 100px 20px 100px 20px;
   background-image: url("images/about-bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .about-vision {
   padding: 80px 20px;
+}
+.about-vision-div{
+  background-color:  #8949C3;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 20px; 
+  padding: 50px 70px 20px 70px;
+}
+.about-mission-div{
+  background-color:  #FCB932;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 20px; 
+  padding: 50px 70px 20px 70px;
+}
+.about-vision-core{
+  background-color:  #3E50F7;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 20px; 
+  padding: 50px 70px 20px 70px;
 }
 .about-contain {
   background: #ffffff;
@@ -730,5 +749,38 @@ body {
   }
 
   /* ---- End of Home styles ------- */
+
+  /* --- ABOUT PAGE MOBILE STYLES */
+  .about-title{
+    padding: 30px 0px;
+  }
+  .about-feature{
+    padding: 50px 20px;
+  }
+  .about-details{
+    padding: 50px 20px;
+  }
+  .about-vision {
+    padding: 50px 20px;
+  }
+  .about-vision-div{
+    background-color:  #8949C3;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 20px; 
+    padding: 50px 20px 20px 20px;
+  }
+  .about-mission-div{
+    background-color:  #FCB932;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 20px; 
+    padding: 50px 20px 20px 20px;
+  }
+  .about-vision-core{
+    background-color:  #3E50F7;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 20px; 
+    padding: 50px 20px 20px 20px;
+  }
+  
   
 }
