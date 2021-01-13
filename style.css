@@ -42,6 +42,52 @@ body {
   padding: 8px;
 }
 
+.navbar-toggler {
+  float: right;
+  border: none;
+  padding-right: 0;
+}
+.navbar-light .navbar-nav .nav-link{
+  transition: all 0.5s;
+}
+/*  */
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 1px solid #8949c3;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after, 
+.navbar-light .navbar-toggler-icon:before{
+  width: 24px;
+  position: absolute;
+  height: 1px;
+  background-color: #8949c3;
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: 2;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after{
+  top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
 .linked-home::after {
   content: "";
   display: block;
@@ -600,6 +646,12 @@ body {
   .target-img{
     width: 25px;
     height: 25px;
+  }
+  .navbar-light .navbar-nav .nav-link.started {
+    border: 1px solid #8949c3;
+    padding: 8px;
+    width: 150px;
+    text-align: center;
   }
   .first-bg{
     margin-top: -150px;
