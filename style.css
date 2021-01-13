@@ -576,6 +576,23 @@ body {
   top: 250px;
   right: 30px;
 }
+.contact-first{
+  background: #160059; 
+  border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   height: 591px;
+}
+.contact-first-div{
+  padding: 50px 100px 0px 50px;
+}
+.contact-second{
+  padding: 50px 50px;
+   background: #FFFFFF;
+  box-shadow: 0px 10px 60px 5px rgba(0, 0, 0, 0.03);
+   border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 591px;
+}
 .contact-head {
   font-weight: bold;
 }
@@ -752,7 +769,7 @@ body {
 
   /* --- ABOUT PAGE MOBILE STYLES */
   .about-title{
-    padding: 30px 0px;
+    padding: 30px 10px;
   }
   .about-feature{
     padding: 50px 20px;
@@ -780,6 +797,27 @@ body {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
     border-radius: 20px; 
     padding: 50px 20px 20px 20px;
+  }
+
+  /* -- CONTACT PAGE STYLES */
+  .contact-form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-first{
+    background: #160059; 
+    border-radius: 0px;
+    height: auto;
+  }
+  .contact-first-div{
+    padding: 50px 20px 10px 20px;
+  }
+  .contact-second{
+    padding: 50px 20px;
+     background: #FFFFFF;
+    box-shadow: 0px 10px 60px 5px rgba(0, 0, 0, 0.03);
+     border-radius: 0px;
+     height: auto;
   }
   
   
