@@ -659,9 +659,14 @@ body {
 /* ----MEDIA QUERY FOR MOBILE PHONES STYLES */
 @media (max-width: 767px) {
   /*  ----- Home section styles --------- */
+  .image-style {
+    position: relative;
+    margin-top: 20px;
+  }
   .learn-div {
     position: absolute;
   bottom: -220px;
+  width: 220px;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #7429b8;
@@ -694,8 +699,17 @@ body {
   }
   .playstore-design {
     position: absolute;
-    bottom: -200px;
-    display: flex;
+    width: 220px;
+    bottom: -212px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  
+  }
+  .appstore {
+    background-color: #ffffff;
+    padding: 12px 30px 12px 30px;
+    border-radius: 0px;
+    cursor: pointer;
   }
   /* Features styles */
 .feature {
