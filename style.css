@@ -665,8 +665,8 @@ body {
   }
   .learn-div {
     position: absolute;
-  bottom: -220px;
-  width: 220px;
+  bottom: -240px;
+  width: 250px;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #7429b8;
@@ -674,15 +674,15 @@ body {
     /* padding: 30px 20px; */
   }
   .learn-text{
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
   }
   .signal-div {
     position: absolute;
-    bottom: 0px;
-    left: 230px;
+    bottom: 10px;
+    left: 290px;
     background: rgba(255, 255, 255, 0.89);
-    padding: 15px 15px;
+    padding: 20px 18px;
   }
   .target-img{
     width: 25px;
@@ -699,15 +699,15 @@ body {
   }
   .playstore-design {
     position: absolute;
-    width: 220px;
-    bottom: -212px;
+    width: 250px;
+    bottom: -225px;
     left: 50%;
     transform: translate(-50%, -50%); 
   
   }
   .appstore {
     background-color: #ffffff;
-    padding: 12px 30px 12px 30px;
+    padding: 12px 39px 12px 38.5px;
     border-radius: 0px;
     cursor: pointer;
   }
