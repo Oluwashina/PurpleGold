@@ -657,7 +657,17 @@ body {
 }
 
 /* ----MEDIA QUERY FOR MOBILE PHONES STYLES */
-@media (max-width: 767px) {
+
+@media only screen and (max-width: 380px) {
+  .signal-div {
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    background: rgba(255, 255, 255, 0.89);
+    padding: 20px 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
   /*  ----- Home section styles --------- */
   .image-style {
     position: relative;
