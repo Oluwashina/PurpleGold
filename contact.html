@@ -8,6 +8,7 @@
         <!-- favicon -->
     <link rel="icon" href="images/purple_fav.png" type="image/png" sizes="32x32">
       <!-- fonts -->
+      <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- toast -->
     <link rel="stylesheet" href="iziToast-master/dist/css/iziToast.min.css">
@@ -245,7 +246,10 @@
     
 
 
-
+ <!-- back to top button styles -->
+ <div class="to-top-container to-top-right">
+    <span class="mdi mdi-arrow-up" id="toTop" style="font-size: 20px; color: #fff; cursor: pointer;"></span>
+</div>
 
 
 
@@ -273,6 +277,22 @@
                 
            })
     })
+
+   //  <!-- back-to-top script -->
+   const backToTop = document.querySelector('#toTop');
+   window.addEventListener('scroll',function(){
+       if(window.pageYOffset > 500){
+           backToTop.style.display = "flex";
+       }else{
+           backToTop.style.display = "none";
+       }
+   });
+   backToTop.addEventListener('click',function(){
+       window.scrollTo(0,0);
+   })
+
+   
+
 </script>
 </body>
 </html>
