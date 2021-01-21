@@ -12,6 +12,7 @@
     <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
 
@@ -54,7 +55,21 @@
         <!-- image section -->
         <div class="container">
             <div class="image-style">
-                <img src="images/woman.png" class="img-fluid">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/woman.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slider1.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slider2.png" alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+    
+                <!-- <img src="images/woman.png" class="img-fluid"> -->
 
                 <!-- div design layout -->
                 <div class="learn-div">
@@ -96,6 +111,8 @@
 
 
         </div>
+
+
 
         
     <!-- First Section -->
@@ -471,8 +488,12 @@
                 <img src="images/yellow_ellipse.png" class="img-fluid">
             </div>
         </div>
+
+        
        
 
+           
+        
     </section>
 
 
@@ -570,7 +591,10 @@
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
 
+        // carousel
+        $('.carousel').carousel()
 
+    
 
      })
 

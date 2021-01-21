@@ -88,6 +88,13 @@ body {
   border-color: transparent;
 }
 
+/* owl carousel styles */
+.owl-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* fixed navbar styles */
 .fixed-top.scrolled {
   background-color: #fff;
@@ -370,7 +377,7 @@ body {
 .video-column {
   background: #000000;
   padding: 100px 100px;
-      /* height: 495.7px; */
+  height: 495.7px;
 }
 
 .row_def {
