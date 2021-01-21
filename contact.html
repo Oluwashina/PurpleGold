@@ -17,7 +17,7 @@
 <body>
 
     <!-- Navbar section -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container mt-2 mb-2">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo1.png" class="logo" width="135" height="40" loading="lazy">
@@ -265,6 +265,13 @@
 <script src="iziToast-master/dist/js/iziToast.min.js"></script>
 <script>
     $(document).ready(function(){
+        
+        $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+
+        
            // conatct functionality
            $("form").submit(function(event) {
                 event.preventDefault()
